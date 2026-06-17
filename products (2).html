@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Products – Mauli Go-Vardhan Goshala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-symbol">🐄</span>
+        <span class="brand-text">
+          <span class="brand-name">Mauli Go-Vardhan</span>
+          <span class="brand-sub">Goshala</span>
+        </span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#products">Featured</a></li>
+        <li><a href="products.html" class="active">All Products</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#locate">Visit Us</a></li>
+      </ul>
+      <a href="https://wa.me/919870832979?text=Namaste%2C%20I%20would%20like%20to%20order%20from%20Mauli%20Go-Vardhan%20Goshala." target="_blank" class="nav-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Order on WhatsApp
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="products-page-hero">
+    <div class="container">
+      <p class="section-eyebrow">|| वन्दे गो मातरम् ||</p>
+      <h1 class="section-title">All Panchgavya Products</h1>
+      <p>23 pure products made from sacred Indian cow — dairy, wellness, skin care, spiritual & home.</p>
+    </div>
+  </section>
+
+  <!-- FILTER + PRODUCTS -->
+  <section class="all-products-section">
+    <div class="container">
+      <div class="products-filter">
+        <button class="filter-btn active" data-tag="all">All Products</button>
+        <button class="filter-btn" data-tag="Dairy">🥛 Dairy</button>
+        <button class="filter-btn" data-tag="Wellness">🌿 Wellness</button>
+        <button class="filter-btn" data-tag="Skin Care">🌸 Skin Care</button>
+        <button class="filter-btn" data-tag="Oral Care">😁 Oral Care</button>
+        <button class="filter-btn" data-tag="Spiritual">🪔 Spiritual</button>
+        <button class="filter-btn" data-tag="Pain Care">💆 Pain Care</button>
+        <button class="filter-btn" data-tag="Home">🏠 Home</button>
+        <button class="filter-btn" data-tag="Bath">🛁 Bath</button>
+        <button class="filter-btn" data-tag="Protection">📡 Protection</button>
+      </div>
+      <div class="all-products-grid" id="allProductsGrid">
+
+        <!-- Card 1 -->
+        <div class="product-card" data-tag="Dairy">
+          <div class="product-card-tag">Dairy</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/milk.jpg" alt="Mauli Zero Chemical Milk"> -->
+            🥛
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Zero Chemical Milk</h3>
+            <p class="product-desc">Intellectual booster for babies, similar to mother's milk</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹110 <span>/ litre</span></span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Zero Chemical Milk', 'Dairy', '₹110 / litre', 'Intellectual booster for babies, similar to mother\'s milk', '🥛')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Zero%20Chemical%20Milk%2A%0APrice%3A%20%E2%82%B9110%20/%20litre%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card" data-tag="Dairy">
+          <div class="product-card-tag">Dairy</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/makkhan.jpg" alt="Butter Makkhan"> -->
+            🧈
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Butter Makkhan</h3>
+            <p class="product-desc">For cultivating sattvic vritti and medicinal use</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹2000 <span>/ kg</span></span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Butter Makkhan', 'Dairy', '₹2000 / kg', 'For cultivating sattvic vritti and medicinal use', '🧈')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AButter%20Makkhan%2A%0APrice%3A%20%E2%82%B92000%20/%20kg%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card" data-tag="Dairy">
+          <div class="product-card-tag">Dairy</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/chhach.jpg" alt="Butter Milk / Chhach"> -->
+            🍶
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Butter Milk / Chhach</h3>
+            <p class="product-desc">Useful for food digestion and heat absorption</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹25 <span>/ litre</span></span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Butter Milk / Chhach', 'Dairy', '₹25 / litre', 'Useful for food digestion and heat absorption', '🍶')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AButter%20Milk%20/%20Chhach%2A%0APrice%3A%20%E2%82%B925%20/%20litre%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card" data-tag="Dairy">
+          <div class="product-card-tag">Dairy</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/ghee.jpg" alt="Mauli Pure Ghee"> -->
+            ✨
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Pure Ghee</h3>
+            <p class="product-desc">Made in vedic manner, very sattvic & medicinal</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹750 <span>/ 250 gms</span></span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Pure Ghee', 'Dairy', '₹750 / 250 gms', 'Made in vedic manner, very sattvic & medicinal', '✨')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Pure%20Ghee%2A%0APrice%3A%20%E2%82%B9750%20/%20250%20gms%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-card" data-tag="Wellness">
+          <div class="product-card-tag">Wellness</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/tulsi-ghanvati.jpg" alt="Go-ark Tulsi Ghanvati"> -->
+            🌿
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Go-ark Tulsi Ghanvati</h3>
+            <p class="product-desc">Useful on piles and kapha diseases</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹200</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Go-ark Tulsi Ghanvati', 'Wellness', '₹200', 'Useful on piles and kapha diseases', '🌿')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AGo-ark%20Tulsi%20Ghanvati%2A%0APrice%3A%20%E2%82%B9200%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="product-card" data-tag="Wellness">
+          <div class="product-card-tag">Wellness</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/prajkta-ghanvati.jpg" alt="Go-ark Prajkta Ghanvati"> -->
+            🌱
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Go-ark Prajkta Ghanvati</h3>
+            <p class="product-desc">Useful for joint pain & vata</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹160</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Go-ark Prajkta Ghanvati', 'Wellness', '₹160', 'Useful for joint pain & vata', '🌱')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AGo-ark%20Prajkta%20Ghanvati%2A%0APrice%3A%20%E2%82%B9160%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="product-card" data-tag="Wellness">
+          <div class="product-card-tag">Wellness</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/arjun-ghanvati.jpg" alt="Go-ark Arjun Ghanvati"> -->
+            ❤️
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Go-ark Arjun Ghanvati</h3>
+            <p class="product-desc">Useful on heart and blood related diseases</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹200</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Go-ark Arjun Ghanvati', 'Wellness', '₹200', 'Useful on heart and blood related diseases', '❤️')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AGo-ark%20Arjun%20Ghanvati%2A%0APrice%3A%20%E2%82%B9200%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="product-card" data-tag="Wellness">
+          <div class="product-card-tag">Wellness</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/pashanbhed-ghanvati.jpg" alt="Go-ark Pashanbhed Ghanvati"> -->
+            🫘
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Go-ark Pashanbhed Ghanvati</h3>
+            <p class="product-desc">Useful for kidney stones</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹200</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Go-ark Pashanbhed Ghanvati', 'Wellness', '₹200', 'Useful for kidney stones', '🫘')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AGo-ark%20Pashanbhed%20Ghanvati%2A%0APrice%3A%20%E2%82%B9200%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="product-card" data-tag="Wellness">
+          <div class="product-card-tag">Wellness</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/amrutvel-ghanvati.jpg" alt="Go-ark Amrutvel Ghanvati"> -->
+            🩸
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Go-ark Amrutvel Ghanvati</h3>
+            <p class="product-desc">Useful for diabetes</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹200</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Go-ark Amrutvel Ghanvati', 'Wellness', '₹200', 'Useful for diabetes', '🩸')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AGo-ark%20Amrutvel%20Ghanvati%2A%0APrice%3A%20%E2%82%B9200%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="product-card" data-tag="Wellness">
+          <div class="product-card-tag">Wellness</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/punarnava-ghanvati.jpg" alt="Go-ark Punarnava Ghanvati"> -->
+            🌾
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Go-ark Punarnava Ghanvati</h3>
+            <p class="product-desc">Useful on cancer and fat lumps</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹200</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Go-ark Punarnava Ghanvati', 'Wellness', '₹200', 'Useful on cancer and fat lumps', '🌾')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AGo-ark%20Punarnava%20Ghanvati%2A%0APrice%3A%20%E2%82%B9200%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="product-card" data-tag="Oral Care">
+          <div class="product-card-tag">Oral Care</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/dant-manjan.jpg" alt="Mauli Divya Dant Manjan"> -->
+            😁
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Divya Dant Manjan</h3>
+            <p class="product-desc">For clean, healthy teeth and gums. For bad breath</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹50</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Divya Dant Manjan', 'Oral Care', '₹50', 'For clean, healthy teeth and gums. For bad breath', '😁')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Divya%20Dant%20Manjan%2A%0APrice%3A%20%E2%82%B950%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="product-card" data-tag="Bath">
+          <div class="product-card-tag">Bath</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/suvasik-utne.jpg" alt="Mauli Suvasik Utne"> -->
+            🛁
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Suvasik Utne</h3>
+            <p class="product-desc">For Abhyang bath</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹20 <span>/ 40 gms</span></span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Suvasik Utne', 'Bath', '₹20 / 40 gms', 'For Abhyang bath', '🛁')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Suvasik%20Utne%2A%0APrice%3A%20%E2%82%B920%20/%2040%20gms%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="product-card" data-tag="Wellness">
+          <div class="product-card-tag">Wellness</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/netra-aushdhi.jpg" alt="Mauli Netra Aushdhi"> -->
+            👁️
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Netra Aushdhi</h3>
+            <p class="product-desc">For redness of the eyes and other eye diseases</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹50</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Netra Aushdhi', 'Wellness', '₹50', 'For redness of the eyes and other eye diseases', '👁️')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Netra%20Aushdhi%2A%0APrice%3A%20%E2%82%B950%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="product-card" data-tag="Wellness">
+          <div class="product-card-tag">Wellness</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/karn-aushdhi.jpg" alt="Mauli Karn Aushdhi"> -->
+            👂
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Karn Aushdhi</h3>
+            <p class="product-desc">For ear diseases</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹40</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Karn Aushdhi', 'Wellness', '₹40', 'For ear diseases', '👂')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Karn%20Aushdhi%2A%0APrice%3A%20%E2%82%B940%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="product-card" data-tag="Pain Care">
+          <div class="product-card-tag">Pain Care</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/amrutdhara.jpg" alt="Mauli Amrutdhara"> -->
+            💆
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Amrutdhara</h3>
+            <p class="product-desc">For body pain, Joint pain</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹100 <span>& ₹50</span></span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Amrutdhara', 'Pain Care', '₹100 & ₹50', 'For body pain, Joint pain', '💆')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Amrutdhara%2A%0APrice%3A%20%E2%82%B9100%20%26%20%E2%82%B950%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="product-card" data-tag="Spiritual">
+          <div class="product-card-tag">Spiritual</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/dhupbatti.jpg" alt="Mauli Dhupbatti"> -->
+            🪔
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Dhupbatti</h3>
+            <p class="product-desc">Purifies atmosphere, produces plenty of oxygen</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹30</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Dhupbatti', 'Spiritual', '₹30', 'Purifies atmosphere, produces plenty of oxygen', '🪔')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Dhupbatti%2A%0APrice%3A%20%E2%82%B930%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="product-card" data-tag="Home">
+          <div class="product-card-tag">Home</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/go-nail.jpg" alt="Mauli Go-nail"> -->
+            🏠
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Go-nail</h3>
+            <p class="product-desc">Natural floor cleaner</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹100</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Go-nail', 'Home', '₹100', 'Natural floor cleaner', '🏠')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Go-nail%2A%0APrice%3A%20%E2%82%B9100%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="product-card" data-tag="Wellness">
+          <div class="product-card-tag">Wellness</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/nasya-ghrut.jpg" alt="Mauli Nasya Ghrut"> -->
+            💧
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Nasya Ghrut</h3>
+            <p class="product-desc">For Sinus, Migraine, Snoring — nasal Panchgavya ghee</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹120</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Nasya Ghrut', 'Wellness', '₹120', 'For Sinus, Migraine, Snoring — nasal Panchgavya ghee', '💧')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Nasya%20Ghrut%2A%0APrice%3A%20%E2%82%B9120%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="product-card" data-tag="Skin Care">
+          <div class="product-card-tag">Skin Care</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/gomay-soap.jpg" alt="Mauli Gomay Soap"> -->
+            🧼
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Gomay Soap</h3>
+            <p class="product-desc">Useful for daily bathing and skin diseases</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹40</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Gomay Soap', 'Skin Care', '₹40', 'Useful for daily bathing and skin diseases', '🧼')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Gomay%20Soap%2A%0APrice%3A%20%E2%82%B940%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="product-card" data-tag="Skin Care">
+          <div class="product-card-tag">Skin Care</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/panchgavya-soap.jpg" alt="Mauli Panchgavya Soap"> -->
+            🫧
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Panchgavya Soap</h3>
+            <p class="product-desc">Useful for daily bathing</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹60</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Panchgavya Soap', 'Skin Care', '₹60', 'Useful for daily bathing', '🫧')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Panchgavya%20Soap%2A%0APrice%3A%20%E2%82%B960%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="product-card" data-tag="Wellness">
+          <div class="product-card-tag">Wellness</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/takrarist.jpg" alt="Mauli Takrarist"> -->
+            🌀
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Takrarist</h3>
+            <p class="product-desc">Useful in acidity, loss of appetite, constipation</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹120</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Takrarist', 'Wellness', '₹120', 'Useful in acidity, loss of appetite, constipation', '🌀')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Takrarist%2A%0APrice%3A%20%E2%82%B9120%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="product-card" data-tag="Skin Care">
+          <div class="product-card-tag">Skin Care</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/shat-dhaut-ghrut.jpg" alt="Mauli Shat Dhaut Ghrut"> -->
+            🌸
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Mauli Shat Dhaut Ghrut</h3>
+            <p class="product-desc">Useful in skin diseases, wounds and rheumatic disease</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹125 <span>/ 25 gms</span></span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Mauli Shat Dhaut Ghrut', 'Skin Care', '₹125 / 25 gms', 'Useful in skin diseases, wounds and rheumatic disease', '🌸')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AMauli%20Shat%20Dhaut%20Ghrut%2A%0APrice%3A%20%E2%82%B9125%20/%2025%20gms%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 23 -->
+        <div class="product-card" data-tag="Protection">
+          <div class="product-card-tag">Protection</div>
+          <div class="product-icon-wrap">
+            <!-- REPLACE emoji with: <img src="assets/anti-radiation-chip.jpg" alt="Anti Radiation Chip"> -->
+            📡
+          </div>
+          <div class="product-body">
+            <p class="product-category">Dairy</p>
+            <h3 class="product-name">Anti Radiation Chip</h3>
+            <p class="product-desc">To avoid harmful radiation</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">₹100</span>
+            <div class="product-actions">
+              <button class="btn btn-outline-saffron" onclick="openModal('Anti Radiation Chip', 'Protection', '₹100', 'To avoid harmful radiation', '📡')">Know More</button>
+              <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%20%F0%9F%99%8F%0A%0AI%20am%20interested%20in%20ordering%3A%0A%2AAnti%20Radiation%20Chip%2A%0APrice%3A%20%E2%82%B9100%0A%0APlease%20confirm%20availability%20and%20delivery%20details.%20Thank%20you%21" target="_blank" class="btn btn-wa"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact-cta">
+    <div class="container cta-inner">
+      <p class="section-eyebrow" style="color:var(--gold-light)">Direct Ordering</p>
+      <h2 class="section-title" style="color:#fff">Order Any Product Directly</h2>
+      <p style="color:rgba(255,255,255,0.75);max-width:540px;margin:1rem auto 2.5rem">
+        Click <strong>Order</strong> on any product card to open WhatsApp with your order details pre-filled. Or call Pradip Bhoir directly for bulk or special orders.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%2C%20I%20would%20like%20to%20place%20a%20bulk%20order%20for%20Mauli%20Goshala%20products." target="_blank" class="btn-whatsapp-large">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Order
+        </a>
+        <a href="tel:+919870832979" class="btn btn-primary" style="font-size:1.05rem;padding:1.1rem 2.5rem;">
+          📞 Call Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-symbol" style="font-size:2rem;">🐄</span>
+        <span class="brand-text">
+          <span class="brand-name">Mauli Go-Vardhan Goshala</span>
+          <span class="brand-sub">Narivali, Wakalan, Thane – 400612</span>
+        </span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="products.html">All Products</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#locate">Visit Us</a>
+      </div>
+      <p class="footer-copy">© 2025 Mauli Go-Vardhan Goshala · All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
