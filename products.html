@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Products – Mauli Go-Vardhan Goshala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-symbol">🐄</span>
+        <span class="brand-text">
+          <span class="brand-name">Mauli Go-Vardhan</span>
+          <span class="brand-sub">Goshala</span>
+        </span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#products">Featured</a></li>
+        <li><a href="products.html" class="active">All Products</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#locate">Visit Us</a></li>
+      </ul>
+      <a href="https://wa.me/919870832979?text=Namaste%2C%20I%20would%20like%20to%20order%20from%20Mauli%20Go-Vardhan%20Goshala." target="_blank" class="nav-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Order on WhatsApp
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="products-page-hero">
+    <div class="container">
+      <p class="section-eyebrow">|| वन्दे गो मातरम् ||</p>
+      <h1 class="section-title">All Panchgavya Products</h1>
+      <p>23 pure products made from sacred Indian cow — dairy, wellness, skin care, spiritual & home.</p>
+    </div>
+  </section>
+
+  <!-- FILTER + PRODUCTS -->
+  <section class="all-products-section">
+    <div class="container">
+      <div class="products-filter">
+        <button class="filter-btn active" data-tag="all">All Products</button>
+        <button class="filter-btn" data-tag="Dairy">🥛 Dairy</button>
+        <button class="filter-btn" data-tag="Wellness">🌿 Wellness</button>
+        <button class="filter-btn" data-tag="Skin Care">🌸 Skin Care</button>
+        <button class="filter-btn" data-tag="Oral Care">😁 Oral Care</button>
+        <button class="filter-btn" data-tag="Spiritual">🪔 Spiritual</button>
+        <button class="filter-btn" data-tag="Pain Care">💆 Pain Care</button>
+        <button class="filter-btn" data-tag="Home">🏠 Home</button>
+        <button class="filter-btn" data-tag="Bath">🛁 Bath</button>
+        <button class="filter-btn" data-tag="Protection">📡 Protection</button>
+      </div>
+      <div id="allLoading" style="text-align:center;padding:4rem;color:var(--text-soft);">
+        <div style="font-size:2.5rem;margin-bottom:1rem;">🐄</div>
+        <p>Loading products...</p>
+      </div>
+      <div class="all-products-grid" id="allProductsGrid" style="display:none;"></div>
+      </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact-cta">
+    <div class="container cta-inner">
+      <p class="section-eyebrow" style="color:var(--gold-light)">Direct Ordering</p>
+      <h2 class="section-title" style="color:#fff">Order Any Product Directly</h2>
+      <p style="color:rgba(255,255,255,0.75);max-width:540px;margin:1rem auto 2.5rem">
+        Click <strong>Order</strong> on any product card to open WhatsApp with your order details pre-filled. Or call Pradip Bhoir directly for bulk or special orders.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="https://wa.me/919870832979?text=Namaste%20Pradip%20ji%2C%20I%20would%20like%20to%20place%20a%20bulk%20order%20for%20Mauli%20Goshala%20products." target="_blank" class="btn-whatsapp-large">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Order
+        </a>
+        <a href="tel:+919870832979" class="btn btn-primary" style="font-size:1.05rem;padding:1.1rem 2.5rem;">
+          📞 Call Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-symbol" style="font-size:2rem;">🐄</span>
+        <span class="brand-text">
+          <span class="brand-name">Mauli Go-Vardhan Goshala</span>
+          <span class="brand-sub">Narivali, Wakalan, Thane – 400612</span>
+        </span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="products.html">All Products</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#locate">Visit Us</a>
+      </div>
+      <p class="footer-copy">© 2025 Mauli Go-Vardhan Goshala · All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module">
+  const SB_URL = 'https://nhiganjgelfwtukniwqq.supabase.co';
+  const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5oaWdhbmpnZWxmd3R1a25pd3FxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1ODg0NDUsImV4cCI6MjA5NzE2NDQ0NX0.Sz1vWmxX9j1e5fUMwN5HlCrOunYPkjhDI7YQvJYsXyc';
+  let allProds = [];
+
+  function makeCard(p) {
+    const wa = encodeURIComponent(p.whatsapp_msg || `Namaste Pradip ji 🙏\n\nI am interested in ordering:\n*${p.name}*\nPrice: ${p.price}\n\nPlease confirm. Thank you!`);
+    const img = p.image_url
+      ? `<img src="${p.image_url}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;display:block;">`
+      : (p.emoji || '🛍️');
+    const nameE = (p.name||'').replace(/'/g,"\\'").replace(/"/g,'&quot;');
+    const descE = (p.description||'').replace(/'/g,"\\'").replace(/"/g,'&quot;');
+    const iconE = p.image_url ? p.image_url.replace(/'/g,"\\'") : (p.emoji||'🛍️');
+    const isImg = !!p.image_url;
+    return `
+      <div class="product-card" data-tag="${p.tag||''}">
+        ${p.badge ? `<div class="product-card-tag">${p.badge}</div>` : ''}
+        <div class="product-icon-wrap">${img}</div>
+        <div class="product-body">
+          <p class="product-category">${p.tag||''}</p>
+          <h3 class="product-name">${p.name}</h3>
+          <p class="product-desc">${p.description||''}</p>
+        </div>
+        <div class="product-footer">
+          <span class="product-price">${p.price}</span>
+          <div class="product-actions">
+            <button class="btn btn-outline-saffron" onclick="openModal(this)"
+              data-name="${p.name||''}"
+              data-tag="${p.tag||''}"
+              data-price="${p.price||''}"
+              data-desc="${p.description||''}"
+              data-img="${p.image_url||''}"
+              data-emoji="${p.emoji||'🛍️'}">Know More</button>
+            <a href="https://wa.me/919870832979?text=${wa}" target="_blank" class="btn btn-wa">🟢 Order</a>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function renderGrid(list) {
+    const grid = document.getElementById('allProductsGrid');
+    if (!list.length) { grid.innerHTML = '<p style="text-align:center;color:var(--text-soft);padding:2rem;">No products found.</p>'; return; }
+    grid.innerHTML = list.map(makeCard).join('');
+  }
+
+  async function loadAll() {
+    try {
+      const res = await fetch(
+        `${SB_URL}/rest/v1/products?is_active=eq.true&order=id.asc`,
+        { headers: { 'apikey': SB_KEY, 'Authorization': 'Bearer ' + SB_KEY } }
+      );
+      allProds = await res.json();
+      document.getElementById('allLoading').style.display = 'none';
+      document.getElementById('allProductsGrid').style.display = 'grid';
+      renderGrid(allProds);
+    } catch(e) {
+      document.getElementById('allLoading').innerHTML = '<p>Could not load products.</p>';
+    }
+  }
+
+  // Filter buttons
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const tag = btn.dataset.tag;
+      renderGrid(tag === 'all' ? allProds : allProds.filter(p => p.tag === tag));
+    });
+  });
+
+  loadAll();
+  </script>
+</body>
+</html>
